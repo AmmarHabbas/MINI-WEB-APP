@@ -1,0 +1,6 @@
+{
+  "name": "MINI Global Flagship | Big Love & Go-Kart Feeling",
+  "description": "The official MINI Global experience featuring the 240mm Circular OLED Display, 360° interactive configurator with multitone roof, vehicle fleet showcase, and Big Love sustainability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

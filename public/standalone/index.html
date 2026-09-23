@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINI Global Flagship | Pure Standalone Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header>
+    <a href="#" class="brand-logo">
+      <span>MINI</span>
+      <span class="brand-badge">FLAGSHIP</span>
+    </a>
+    <nav>
+      <a href="#oled">240mm OLED Console</a>
+      <a href="#configurator">360° Configurator</a>
+      <a href="#fleet">Model Lineup</a>
+      <a href="#testdrive">Book Test Drive</a>
+    </nav>
+    <a href="#testdrive" class="btn-primary">Book Go-Kart Test Drive</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <span class="hero-tag">Big Love & Go-Kart Agility</span>
+    <h1>Charismatic Simplicity.<br>The All-New Electric MINI.</h1>
+    <p>
+      Reinvented for the electrified era with the world's first 240mm circular OLED center display, signature multitone gradient roof, and instant corner-carving torque.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 1rem;">
+      <a href="#configurator" class="btn-primary">Configure in 360°</a>
+      <a href="#oled" class="btn-primary btn-red">Experience OLED Modes</a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">402 km</div>
+        <div class="stat-label">WLTP ELECTRIC RANGE</div>
+      </div>
+      <div>
+        <div class="stat-num">6.7 s</div>
+        <div class="stat-label">0-100 KM/H SPRINT</div>
+      </div>
+      <div>
+        <div class="stat-num">240 mm</div>
+        <div class="stat-label">CIRCULAR OLED DISPLAY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 240mm Circular OLED Display Section -->
+  <section id="oled" class="oled-section">
+    <div class="oled-grid">
+      <div>
+        <span style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--color-electric-cyan); font-weight: 700; letter-spacing: 0.1em;">
+          MINI Operating System 9
+        </span>
+        <h2 style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 900; margin: 0.75rem 0 1rem; line-height: 1.1;">
+          The 240mm Circular OLED Display
+        </h2>
+        <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 2rem;">
+          Select an official MINI Experience Mode below to switch ambient graphics and listen to the authentic synthesized audio profiles:
+        </p>
+
+        <div>
+          <button class="mode-btn active" data-mode="gokart">
+            <div>
+              <strong style="display:block; font-size:1.125rem;">Go-Kart Mode</strong>
+              <small style="color:rgba(255,255,255,0.6);">Sport acceleration sound & red ambient glow</small>
+            </div>
+            <span>🏎️</span>
+          </button>
+
+          <button class="mode-btn" data-mode="green">
+            <div>
+              <strong style="display:block; font-size:1.125rem;">Green Mode</strong>
+              <small style="color:rgba(255,255,255,0.6);">Eco efficiency pulse & tranquil emerald glow</small>
+            </div>
+            <span>🌿</span>
+          </button>
+
+          <button class="mode-btn" data-mode="vivid">
+            <div>
+              <strong style="display:block; font-size:1.125rem;">Vivid Mode</strong>
+              <small style="color:rgba(255,255,255,0.6);">Pop rhythm art & dynamic cyan aura</small>
+            </div>
+            <span>✨</span>
+          </button>
+
+          <button class="mode-btn" data-mode="timeless">
+            <div>
+              <strong style="display:block; font-size:1.125rem;">Timeless Mode</strong>
+              <small style="color:rgba(255,255,255,0.6);">1959 Alec Issigonis classic retro dial</small>
+            </div>
+            <span>⏳</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- OLED Circular Center Console -->
+      <div>
+        <div id="oled-housing" class="oled-circle-housing">
+          <div class="oled-circle-screen">
+            <div style="font-family: monospace; font-size: 0.75rem; opacity: 0.7; width: 100%; display: flex; justify-content: space-between;">
+              <span>10:42 AM</span>
+              <span id="oled-mode-name" style="font-weight: 800; color: var(--color-jcw-red);">GO-KART MODE</span>
+              <span style="color: var(--color-electric-cyan);">84% · 338 km</span>
+            </div>
+
+            <div>
+              <div id="oled-speed" class="oled-speed">74</div>
+              <div style="font-family: monospace; font-size: 0.8125rem; letter-spacing: 0.2em; color: var(--color-jcw-red);">
+                KM / H
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.1); border-radius: 9999px; padding: 0.4rem 1.25rem; font-size: 0.75rem; display: flex; gap: 1.5rem;">
+              <span>21.5°C</span>
+              <span>Oxford Plant Route</span>
+              <span style="color: #34d399;">A/C AUTO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 360 Configurator Section -->
+  <section id="configurator" class="configurator-section">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <span style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--color-racing-green); font-weight: 700; letter-spacing: 0.1em;">
+        Custom Paint & Multitone Roof Studio
+      </span>
+      <h2 style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 900; margin-top: 0.5rem;">
+        Interactive 360° Configurator
+      </h2>
+      <p style="color: var(--color-text-muted);">
+        Click and drag the vehicle horizontally to spin 360 degrees. Select your body paint and contrasting roof options below.
+      </p>
+    </div>
+
+    <!-- 360 Interactive Canvas Container -->
+    <div class="canvas-container" id="canvas-stage">
+      <svg id="svg-car" viewBox="0 0 900 560" style="width: 100%; max-width: 820px; margin: 0 auto; display: block; overflow: visible;">
+        <defs>
+          <linearGradient id="multitoneGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#1C3F94" />
+            <stop offset="50%" stopColor="#00C2D6" />
+            <stop offset="100%" stopColor="#0E0E0E" />
+          </linearGradient>
+
+          <linearGradient id="standaloneBodyPaint" x1="20%" y1="0%" x2="80%" y2="100%">
+            <stop id="paint-stop-1" offset="0%" stop-color="#185948" />
+            <stop id="paint-stop-2" offset="100%" stop-color="#0A382C" />
+          </linearGradient>
+        </defs>
+
+        <!-- Shadow -->
+        <ellipse cx="450" cy="460" rx="300" ry="26" fill="#090A0D" opacity="0.4" />
+
+        <g id="car-group" transform="translate(450, 180)">
+          <!-- Car Body -->
+          <path id="car-body-path" d="M -260 130 C -270 50, -220 10, -170 -15 C -110 -35, -20 -38, 120 -35 C 190 -10, 270 40, 280 110 C 290 160, 260 195, 210 200 L -210 200 C -250 195, -270 160, -260 130 Z" fill="url(#standaloneBodyPaint)" stroke="#090A0D" stroke-width="2" />
+
+          <!-- Cabin Glass -->
+          <path d="M -160 -10 L -120 -115 C -60 -122, 50 -122, 110 -115 L 165 -10 Z" fill="#1C2D3D" stroke="#111" stroke-width="2" />
+
+          <!-- Roof -->
+          <path id="car-roof-path" d="M -145 -115 C -90 -134, 30 -134, 135 -115 C 145 -110, 140 -102, 125 -105 C 30 -120, -80 -120, -135 -105 Z" fill="url(#multitoneGradient)" stroke="#0E0E0E" stroke-width="2" />
+
+          <!-- Wheels -->
+          <circle cx="-180" cy="180" r="62" fill="#15171C" stroke="#000" stroke-width="3" />
+          <circle cx="-180" cy="180" r="44" fill="#CBD5E1" stroke="#475569" stroke-width="3" />
+          <circle cx="-180" cy="180" r="14" fill="#0A0B0E" />
+
+          <circle cx="180" cy="180" r="62" fill="#15171C" stroke="#000" stroke-width="3" />
+          <circle cx="180" cy="180" r="44" fill="#CBD5E1" stroke="#475569" stroke-width="3" />
+          <circle cx="180" cy="180" r="14" fill="#0A0B0E" />
+
+          <!-- Headlights -->
+          <circle cx="-150" cy="55" r="28" fill="#FFF" stroke="#64748B" stroke-width="3" />
+          <circle cx="150" cy="55" r="28" fill="#FFF" stroke="#64748B" stroke-width="3" />
+        </g>
+      </svg>
+
+      <div style="margin-top: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 1rem;">
+        <span style="font-family: monospace; font-size: 0.8125rem;">Rotation:</span>
+        <input type="range" id="angle-slider" min="0" max="359" value="45" style="width: 280px;">
+        <span id="angle-display" style="font-family: monospace; font-weight: 700; width: 45px;">45°</span>
+      </div>
+    </div>
+
+    <!-- Color Selectors -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+      <div style="background: #fff; padding: 1.5rem; border-radius: 1.5rem; border: 1px solid rgba(0,0,0,0.08);">
+        <h4 style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.75rem;">1. Body Paint</h4>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="color-swatch paint-swatch active" data-hex="#0A382C" style="background:#0A382C;" title="British Racing Green"></button>
+          <button class="color-swatch paint-swatch" data-hex="#D0001B" style="background:#D0001B;" title="Chili Red"></button>
+          <button class="color-swatch paint-swatch" data-hex="#E5C000" style="background:#E5C000;" title="Sunny Side Yellow"></button>
+          <button class="color-swatch paint-swatch" data-hex="#1E6B7B" style="background:#1E6B7B;" title="Ocean Wave Green"></button>
+          <button class="color-swatch paint-swatch" data-hex="#989CA2" style="background:#989CA2;" title="Melting Silver"></button>
+          <button class="color-swatch paint-swatch" data-hex="#17181A" style="background:#17181A;" title="Midnight Black"></button>
+        </div>
+      </div>
+
+      <div style="background: #fff; padding: 1.5rem; border-radius: 1.5rem; border: 1px solid rgba(0,0,0,0.08);">
+        <h4 style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.75rem;">2. Contrasting Roof</h4>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="color-swatch roof-swatch active" data-roof="multitone" style="background:linear-gradient(45deg, #1C3F94, #00C2D6, #0E0E0E);" title="Multitone 3-Color Gradient"></button>
+          <button class="color-swatch roof-swatch" data-roof="#0E0E0E" style="background:#0E0E0E;" title="Jet Black"></button>
+          <button class="color-swatch roof-swatch" data-roof="#F5F5F7" style="background:#F5F5F7;" title="Aspen White"></button>
+          <button class="color-swatch roof-swatch" data-roof="body" style="background:#0A382C;" title="Body Matched"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Showcase Section -->
+  <section id="fleet" style="background: #fff; padding: 6rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 900;">The New MINI Family</h2>
+        <p style="color: var(--color-text-muted);">From electric city agility to spacious Countryman AWD luxury.</p>
+      </div>
+
+      <div class="fleet-grid">
+        <div class="fleet-card">
+          <div>
+            <div style="font-family: monospace; font-size: 0.75rem; color: var(--color-electric-cyan); font-weight: 700; text-transform: uppercase;">100% Electric</div>
+            <h3 class="fleet-title">The All-Electric MINI Cooper</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0.5rem 0 1.25rem;">
+              Iconic proportions with 402 km WLTP range and instant 218 HP electric torque.
+            </p>
+            <div style="font-family: monospace; font-size: 0.8125rem; border-top: 1px solid #eee; padding-top: 0.75rem;">
+              0-100: 6.7s · WLTP: 402 km · Battery: 54.2 kWh
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+            <span style="font-size: 1.25rem; font-weight: 800;">€36,650</span>
+            <a href="#testdrive" class="btn-primary">Book Test Drive</a>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <div>
+            <div style="font-family: monospace; font-size: 0.75rem; color: var(--color-racing-green); font-weight: 700; text-transform: uppercase;">Compact Luxury SUV</div>
+            <h3 class="fleet-title">The All-New MINI Countryman</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0.5rem 0 1.25rem;">
+              Spacious 5-seater with intelligent ALL4 electric AWD and up to 1,450L luggage capacity.
+            </p>
+            <div style="font-family: monospace; font-size: 0.8125rem; border-top: 1px solid #eee; padding-top: 0.75rem;">
+              0-100: 5.6s · WLTP: 462 km · Power: 313 HP
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+            <span style="font-size: 1.25rem; font-weight: 800;">€49,500</span>
+            <a href="#testdrive" class="btn-primary">Book Test Drive</a>
+          </div>
+        </div>
+
+        <div class="fleet-card">
+          <div>
+            <div style="font-family: monospace; font-size: 0.75rem; color: var(--color-jcw-red); font-weight: 700; text-transform: uppercase;">Motorsport Heritage</div>
+            <h3 class="fleet-title">MINI John Cooper Works</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-muted); margin: 0.5rem 0 1.25rem;">
+              Track-calibrated chassis, Brembo high performance brakes, and 231 HP TwinPower Turbo.
+            </p>
+            <div style="font-family: monospace; font-size: 0.8125rem; border-top: 1px solid #eee; padding-top: 0.75rem;">
+              0-100: 6.1s · Top: 250 km/h · Torque: 380 Nm
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+            <span style="font-size: 1.25rem; font-weight: 800;">€43,800</span>
+            <a href="#testdrive" class="btn-primary btn-red">Book Test Drive</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Test Drive Section -->
+  <section id="testdrive" style="padding: 6rem 2rem; background: var(--color-warm-white);">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <span style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--color-jcw-red); font-weight: 700; letter-spacing: 0.1em;">
+        Official Flagship Reservation
+      </span>
+      <h2 style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 900; margin-top: 0.5rem;">
+        Book Your Go-Kart Test Drive
+      </h2>
+      <p style="color: var(--color-text-muted);">
+        Reservations are saved instantly in your browser's persistent storage.
+      </p>
+
+      <div class="booking-form">
+        <form id="test-drive-form">
+          <div class="form-group">
+            <label>Model of Interest</label>
+            <select id="input-model">
+              <option value="The All-Electric MINI Cooper SE">The All-Electric MINI Cooper SE (218 HP)</option>
+              <option value="MINI Cooper S TwinPower">MINI Cooper S TwinPower Petrol (204 HP)</option>
+              <option value="The All-New MINI Countryman ALL4">The All-New MINI Countryman ALL4 (313 HP)</option>
+              <option value="The All-New MINI Aceman Crossover">The All-New MINI Aceman Crossover (218 HP)</option>
+              <option value="MINI John Cooper Works (JCW)">MINI John Cooper Works Track Edition (231 HP)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Flagship Studio / Dealership</label>
+            <select id="input-dealer">
+              <option value="London Oxford St Flagship">London Oxford St Flagship (United Kingdom)</option>
+              <option value="Munich MINI Pavilion Lenbachplatz">Munich MINI Pavilion Lenbachplatz (Germany)</option>
+              <option value="Tokyo Shibuya Brand Store">Tokyo Shibuya Brand Store (Japan)</option>
+              <option value="New York Brooklyn Experience Center">New York Brooklyn Experience Center (USA)</option>
+              <option value="Paris George V Flagship">Paris George V Flagship (France)</option>
+            </select>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label>Full Legal Name</label>
+              <input type="text" id="input-name" placeholder="Alex Morgan" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="input-email" placeholder="alex@example.com" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary btn-red" style="width: 100%; justify-content: center; padding: 1rem; font-size: 0.9375rem; margin-top: 1rem;">
+            Confirm Go-Kart Test Drive Appointment
+          </button>
+        </form>
+
+        <div id="booking-status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="font-weight: 700; font-size: 1rem; color: #fff; margin-bottom: 0.5rem;">MINI Global Flagship</p>
+      <p>Big Love & Go-Kart Agility. Official Standalone Pure Web Edition.</p>
+      <p style="margin-top: 1rem; font-size: 0.7rem; opacity: 0.5;">
+        WLTP energy consumption: 14.1 - 17.8 kWh/100 km. CO2 emissions: 0 g/km.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

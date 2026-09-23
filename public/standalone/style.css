@@ -1,0 +1,359 @@
+/* MINI Global Flagship - Standalone Pure CSS3 Edition */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-warm-white: #F6F5F2;
+  --color-asphalt: #111215;
+  --color-pure-black: #0E0E0E;
+  --color-racing-green: #0A382C;
+  --color-chili-red: #D0001B;
+  --color-sunny-yellow: #FFDC00;
+  --color-electric-cyan: #00C2D6;
+  --color-jcw-red: #E60000;
+  --color-text-main: #111215;
+  --color-text-muted: #666A73;
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  background-color: var(--color-warm-white);
+  color: var(--color-text-main);
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(246, 245, 242, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--color-asphalt);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 1.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-text-main);
+}
+
+.btn-primary {
+  background-color: var(--color-asphalt);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s, background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #22252C;
+  transform: translateY(-1px);
+}
+
+.btn-red {
+  background-color: var(--color-jcw-red);
+}
+
+.btn-red:hover {
+  background-color: #ff1a1a;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-tag {
+  font-family: monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-racing-green);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+  text-wrap: balance;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-family: monospace;
+}
+
+/* 240mm OLED Console Section */
+.oled-section {
+  background-color: var(--color-asphalt);
+  color: #fff;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.oled-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.oled-circle-housing {
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 12px;
+  background: linear-gradient(145deg, #2A2E38, #0E0F12);
+  box-shadow: 0 0 50px rgba(0, 194, 214, 0.4), 0 20px 60px rgba(0,0,0,0.8);
+  transition: box-shadow 0.6s;
+}
+
+.oled-circle-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #050608;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.oled-speed {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.mode-btn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateX(8px);
+}
+
+/* Configurator 360 Section */
+.configurator-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.canvas-container {
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  text-align: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.canvas-container:active {
+  cursor: grabbing;
+}
+
+.color-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.25rem;
+  transition: transform 0.15s;
+}
+
+.color-swatch:hover, .color-swatch.active {
+  transform: scale(1.15);
+  outline: 2px solid var(--color-asphalt);
+}
+
+/* Fleet Cards */
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.fleet-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fleet-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+/* Booking Form */
+.booking-form {
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 3rem auto 0;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-family: monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.875rem;
+}
+
+/* Footer */
+footer {
+  background: var(--color-pure-black);
+  color: #fff;
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+}
+
+@media (max-width: 850px) {
+  .oled-grid {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    display: none;
+  }
+}
